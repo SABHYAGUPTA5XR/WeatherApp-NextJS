@@ -69,12 +69,14 @@ export default function Page() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-400 via-blue-200 to-blue-500">
-      <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 shadow-lg mb-8">
-        Weather App
-      </h1>
-      <SearchBar city={city} setCity={setCity} fetchWeather={fetchWeather} />
-      <WeatherDisplay weather={weather} error={error} />
-    </main>
+    <main className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-beige-400 via-beige-200 to-white-500">
+  <h1 className="text-4xl font-extrabold text-blue-600 mb-8">
+    What's The Weather!
+  </h1>
+  <SearchBar city={city} setCity={setCity} fetchWeather={fetchWeather} />
+  <WeatherDisplay weather={weather} error={error} />
+</main>
+
+
   );
 }
